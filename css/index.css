@@ -1,4 +1,12 @@
-.charts {
-    height: 50%;
-    width: 20%;
+body, .row {
+    overflow: hidden;
+    margin-left: 0 !important;
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.charts{
+    height: 100vh;
+    width: auto;
 }

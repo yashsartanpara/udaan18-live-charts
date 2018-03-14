@@ -3,22 +3,296 @@
     <meta charset="utf-8">
     <title>udaan18 Live Charts</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./css/index.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/Chart.bundle.js"></script>
 </head>
 <body>
-<div class="charts">
-    <canvas id="cat1"></canvas>
-    <canvas id="cat2"></canvas>
-    <canvas id="cat3"></canvas>
-    <canvas id="cat4"></canvas>
-    <canvas id="cat5"></canvas>
-    <canvas id="cat6"></canvas>
-    <canvas id="cat7"></canvas>
-    <canvas id="cat8"></canvas>
-    <canvas id="cat9"></canvas>
-    <canvas id="cat10"></canvas>
+
+<div class="owl-carousel">
+    <div class="charts">
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+                <canvas id="cat1"></canvas>
+            </div>
+        </div>
+    </div>
+<div class="owl-carousel">
+    <div>
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="charts col-sm-6">
+                <canvas id="cat2"></canvas>
+            </div>
+        </div>
+    </div>
 </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-    <script src="./js/index.js"></script>
+<div class="owl-carousel">
+    <div>
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="charts col-sm-6">
+                <canvas id="cat3"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="owl-carousel">
+    <div>
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="charts col-sm-6">
+                <canvas id="cat4"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="owl-carousel">
+    <div>
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="charts col-sm-6">
+                <canvas id="cat5"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="owl-carousel">
+    <div>
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="charts col-sm-6">
+                <canvas id="cat6"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="owl-carousel">
+    <div>
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="charts col-sm-6">
+                <canvas id="cat7"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="owl-carousel">
+    <div>
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="charts col-sm-6">
+                <canvas id="cat8"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="owl-carousel">
+    <div>
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="charts col-sm-6">
+                <canvas id="cat9"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="owl-carousel">
+    <div>
+        <div class="row">Title</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        a
+                    </div>
+                    <div class="col-sm-3">
+                        b
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        c
+                    </div>
+                    <div class="col-sm-3">
+                        d
+                    </div>
+                </div>
+            </div>
+            <div class="charts col-sm-6">
+                <canvas id="cat10"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="./js/index.js"></script>
 </body>
 </html>

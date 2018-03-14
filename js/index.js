@@ -54,7 +54,7 @@ var charts = [
     }
 ];
 
-var pieCharts = charts.map(function(e) {
+var pieCharts = charts.map(function (e) {
     return new Chart(e.el, {
         type: 'doughnut',
         data: {
@@ -83,5 +83,13 @@ var pieCharts = charts.map(function(e) {
                 animateRotate: true
             }
         }
+    });
+});
+
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+        items:1,
+        loop: true,
+        autoplay:true
     });
 });
