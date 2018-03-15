@@ -1,3 +1,5 @@
+var socket = io();
+
 var chartData = [
     [10, 20, 30, 40],
     [10, 30, 20, 40],
@@ -13,43 +15,43 @@ var chartData = [
 
 var charts = [
     {
-        el: document.getElementById("cat1"),
+        el: $("#cat1"),
         data: chartData[0]
     },
     {
-        el: document.getElementById("cat2"),
+        el: $("#cat2"),
         data: chartData[1]
     },
     {
-        el: document.getElementById("cat3"),
+        el: $("#cat3"),
         data: chartData[2]
     },
     {
-        el: document.getElementById("cat4"),
+        el: $("#cat4"),
         data: chartData[3]
     },
     {
-        el: document.getElementById("cat5"),
+        el: $("#cat5"),
         data: chartData[4]
     },
     {
-        el: document.getElementById("cat6"),
+        el: $("#cat6"),
         data: chartData[5]
     },
     {
-        el: document.getElementById("cat7"),
+        el: $("#cat7"),
         data: chartData[6]
     },
     {
-        el: document.getElementById("cat8"),
+        el: $("#cat8"),
         data: chartData[7]
     },
     {
-        el: document.getElementById("cat9"),
+        el: $("#cat9"),
         data: chartData[8]
     },
     {
-        el: document.getElementById("cat10"),
+        el: $("#cat10"),
         data: chartData[9]
     }
 ];
