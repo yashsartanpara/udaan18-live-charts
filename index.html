@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/flexboxgrid-helpers.min.css">
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/Chart.bundle.js"></script>
     <script src="./js/socket.io.js"></script>
@@ -21,7 +22,7 @@
         <div>
             <div class="row">{{categoryId}}</div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 hidden-xs hidden-sm">
                     <div class="row">
                         <div class="col-sm-3">a</div>
                         <div class="col-sm-3">b</div>
@@ -31,7 +32,7 @@
                         <div class="col-sm-3">d</div>
                     </div>
                 </div>
-                <div class="charts col-sm-6">
+                <div class="charts col-sm-12 col-xs-12 col-md-6 col-lg-6 middle-lg">
                     <canvas id="cat{{@index}}"></canvas>
                 </div>
             </div>
