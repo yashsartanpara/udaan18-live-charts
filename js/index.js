@@ -1,12 +1,10 @@
 const socket = io("udaan18-red-carpet.herokuapp.com/charts");
-let data = {};
+// let data = {};
 let chartData = {};
 let charts = {};
 let pieCharts = [];
-
 let owlCarouselTemplate = $("#owl-carousel-template").html();
 let compiledTemplate = Handlebars.compile(owlCarouselTemplate);
-
 const setData = (votes) => {
     chartData = {
         chart: votes
@@ -42,12 +40,12 @@ const setData = (votes) => {
                         'rgba(75, 192, 192, 1)'
                     ]
                 }],
-                labels: [
-                    "Participant1",
-                    "Participant2",
-                    "Participant3",
-                    "Participant4",
-                ]
+                // labels: [
+                //     "",
+                //     "",
+                //     "",
+                //     "",
+                // ]
             },
             options: {
                 responsive: true,
@@ -64,14 +62,26 @@ const setData = (votes) => {
     $(".owl-carousel").owlCarousel({
         items: 1,
         loop: true,
-        autoplay: false
+        autoplay: true
     });
 
 };
 
 socket.on('init', (votes) => {
     console.log(votes);
-    setData(votes);
+    let category = votes.map(function (cat) {
+        const result = data.categories.find(function (c) {
+            return c._id === cat.categoryId;
+        });
+        if (result) {
+            return {...cat, name: result.title, nominees: result.nominees};
+        }
+        else
+            return cat;
+    });
+    console.log(category);
+
+    setData(category);
 });
 
 socket.on('vote', (votes) => {

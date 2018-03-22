@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/flexboxgrid-helpers.min.css">
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/Chart.bundle.js"></script>
-    <script src="./js/socket.io.js"></script>
+    <script src="js/socket.io.js"></script>
     <script src="js/handlebars-v4.0.11.js"></script>
+    <script src="js/categories.js"></script>
 </head>
 <body>
 <div id="owl-carousel-container"></div>
@@ -20,16 +21,16 @@
     <div class="owl-carousel">
         {{#each chart}}
         <div>
-            <div class="row">{{categoryId}}</div>
+            <div class="row catName">{{name}}</div>
             <div class="row">
                 <div class="col-sm-6 hidden-xs hidden-sm">
                     <div class="row">
-                        <div class="col-sm-3">a</div>
-                        <div class="col-sm-3">b</div>
+                        <div class="col-sm-3 nomineeName">{{nominees.[0].name}}</div>
+                        <div class="col-sm-3 nomineeName">{{nominees.[1].name}}</div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3">c</div>
-                        <div class="col-sm-3">d</div>
+                        <div class="col-sm-3 nomineeName">{{nominees.[2].name}}</div>
+                        <div class="col-sm-3 nomineeName">{{nominees.[3].name}}</div>
                     </div>
                 </div>
                 <div class="charts col-sm-12 col-xs-12 col-md-6 col-lg-6 middle-lg">

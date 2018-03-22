@@ -11,3 +11,11 @@ body, .row {
     height: 100vh;
     width: auto;
 }
+
+.catName {
+    font-size: 1.75rem;
+}
+
+.nomineeName{
+    font-size: 1.25rem;
+}
