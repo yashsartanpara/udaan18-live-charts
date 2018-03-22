@@ -8,15 +8,8 @@ let owlCarouselTemplate = $("#owl-carousel-template").html();
 let compiledTemplate = Handlebars.compile(owlCarouselTemplate);
 
 const setData = (votes) => {
-  data = votes;
-
   chartData = {
-    chart: Object.keys(data).map((key) => {
-      return {
-        key: key,
-        data: data[key]
-      }
-    })
+    chart: votes
   };
 
   let generatedHTML = compiledTemplate(chartData);
@@ -25,12 +18,11 @@ const setData = (votes) => {
   charts = chartData.chart.map((data, index) => {
     return {
       el: $("#cat" + index),
-      data: data.data
+      data: data.votes
     }
   });
 
   pieCharts = charts.map(function (e) {
-    console.log(e);
     return new Chart(e.el, {
       type: 'doughnut',
       data: {
@@ -71,10 +63,9 @@ const setData = (votes) => {
   $(".owl-carousel").owlCarousel({
     items: 1,
     loop: true,
-    autoplay: true
+    autoplay: false
   });
 
-  console.log(pieCharts);
 };
 
 socket.on('init', (votes) => {
@@ -83,10 +74,26 @@ socket.on('init', (votes) => {
 });
 
 socket.on('vote', (votes) => {
-  setData(votes);
+  updateData(pieCharts, votes);
 });
 
-$(document).ready(function () {
 
+const updateData = (pieCharts, votes) => {
+  chartData = {
+    chart: votes
+  };
 
-});
+  charts = chartData.chart.map((data, index) => {
+    return {
+      el: $("#cat" + index),
+      data: data.votes
+    }
+  });
+
+  for(let i=0; i<pieCharts.length;i++){
+    for(let j=0; j< pieCharts[i].data.datasets.length; j++){
+      pieCharts[i].data.datasets[j].data = charts[j].data;
+      console.log(pieCharts[i].data.datasets[j].data + "=" + charts[j].data)
+    }
+  }
+};
