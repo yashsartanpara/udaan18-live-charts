@@ -4,6 +4,7 @@
     <title>Live Charts</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -16,21 +17,34 @@
     <script src="js/categories.js"></script>
 </head>
 <body>
+
 <div id="owl-carousel-container"></div>
 <script id="owl-carousel-template" type="text/x-handlebars-template">
     <div class="owl-carousel">
         {{#each chart}}
-        <div>
+        <div class="items">
             <div class="row catName">{{name}}</div>
-            <div class="row">
-                <div class="col-sm-6 hidden-xs hidden-sm">
+            <div class="row content">
+                <div class="col-sm-6 nomineeContent">
                     <div class="row">
-                        <div class="col-sm-3 nomineeName">{{nominees.[0].name}}</div>
-                        <div class="col-sm-3 nomineeName">{{nominees.[1].name}}</div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nomineeName">
+                            <img class="nomineeImg  hidden-xs hidden-sm" src="{{nominees.[1].imgUrl}}"/>
+                            {{nominees.[1].name}}
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nomineeName">
+                            <img class="nomineeImg  hidden-xs hidden-sm" src="{{nominees.[0].imgUrl}}"/>
+                            {{nominees.[0].name}}
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3 nomineeName">{{nominees.[2].name}}</div>
-                        <div class="col-sm-3 nomineeName">{{nominees.[3].name}}</div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nomineeName">
+                            <img class="nomineeImg  hidden-xs hidden-sm" src="{{nominees.[2].imgUrl}}"/>
+                            {{nominees.[2].name}}
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nomineeName">
+                            <img class="nomineeImg  hidden-xs hidden-sm" src="{{nominees.[3].imgUrl}}"/>
+                            {{nominees.[3].name}}
+                        </div>
                     </div>
                 </div>
                 <div class="charts col-sm-12 col-xs-12 col-md-6 col-lg-6 middle-lg">

@@ -1,7 +1,7 @@
-body, .row {
+body {
+    background: black;
     overflow: hidden;
     margin-left: 0 !important;
-    margin-top: 10px;
     justify-content: center;
     text-align: center;
 }
@@ -12,10 +12,56 @@ body, .row {
     width: auto;
 }
 
-.catName {
-    font-size: 1.75rem;
+.content {
 }
 
-.nomineeName{
+.nomineeContent {
+}
+
+.catName {
+    font-family: "Monoton", cursive;
+    color: red;
+    text-shadow: 2px 2px 8px orangered;
+    margin: 10px !important;
+    font-size: 2rem;
+}
+
+.nomineeName {
+    font-family: "Segoe UI", cursive;
+    color: white;
+    line-height: 2rem;
     font-size: 1.25rem;
+}
+
+.nomineeImg {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 70%;
+}
+
+.row {
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.owl-nav {
+    font-size: 80px;
+    display: flex;
+    width: auto;
+    color: white;
+    right: 5vh !important;
+    top: 80vh !important;
+    position: fixed;
+    justify-content: center;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
 }

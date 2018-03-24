@@ -5,6 +5,7 @@ let charts = {};
 let pieCharts = [];
 let owlCarouselTemplate = $("#owl-carousel-template").html();
 let compiledTemplate = Handlebars.compile(owlCarouselTemplate);
+
 const setData = (votes) => {
     chartData = {
         chart: votes
@@ -40,12 +41,6 @@ const setData = (votes) => {
                         'rgba(75, 192, 192, 1)'
                     ]
                 }],
-                // labels: [
-                //     "",
-                //     "",
-                //     "",
-                //     "",
-                // ]
             },
             options: {
                 responsive: true,
@@ -59,16 +54,9 @@ const setData = (votes) => {
         });
     });
 
-    $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true
-    });
-
 };
 
 socket.on('init', (votes) => {
-    console.log(votes);
     let category = votes.map(function (cat) {
         const result = data.categories.find(function (c) {
             return c._id === cat.categoryId;
@@ -79,12 +67,21 @@ socket.on('init', (votes) => {
         else
             return cat;
     });
-    console.log(category);
+    // console.log(category);
 
     setData(category);
+    $(".owl-carousel").owlCarousel({
+        nav: true,
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout:7000
+    });
+
 });
 
 socket.on('vote', (votes) => {
+    // console.log(votes);
     updateData(pieCharts, votes);
 });
 
@@ -95,16 +92,21 @@ const updateData = (pieCharts, votes) => {
     };
 
     charts = chartData.chart.map((data, index) => {
+
         return {
             el: $("#cat" + index),
             data: data.votes
         }
     });
 
+    // console.log(charts)
     for (let i = 0; i < pieCharts.length; i++) {
-        for (let j = 0; j < pieCharts[i].data.datasets.length; j++) {
-            pieCharts[i].data.datasets[j].data = charts[j].data;
-            console.log(pieCharts[i].data.datasets[j].data + "=" + charts[j].data)
-        }
+        console.log(pieCharts[i].data.datasets[0].length);
+        // for (let j = 0; j < charts.length; j++) {
+        pieCharts[i].data.datasets[0].data = charts[i].data;
+        console.log(pieCharts[i].data.datasets[0].data + "=" + charts[i].data)
+        // }
+        pieCharts[i].update();
     }
+
 };
