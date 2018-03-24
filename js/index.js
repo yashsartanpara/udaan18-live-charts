@@ -71,6 +71,11 @@ socket.on('init', (votes) => {
 
     setData(category);
     $(".owl-carousel").owlCarousel({
+        responsive:{
+            autoHeight:true,
+            autoWidth:true
+        },
+        lazyLoad:true,
         nav: true,
         items: 1,
         loop: true,

@@ -21,12 +21,14 @@ body {
 .catName {
     font-family: "Monoton", cursive;
     color: red;
-    text-shadow: 2px 2px 8px orangered;
+    text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
     margin: 10px !important;
-    font-size: 2rem;
+    font-size: 6vh;
 }
 
 .nomineeName {
+    margin: 10px 0 !important;
+    padding: 0 !important;
     font-family: "Segoe UI", cursive;
     color: white;
     line-height: 2rem;
@@ -42,7 +44,7 @@ body {
 .row {
     justify-content: center;
     text-align: center;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .owl-nav {
@@ -61,7 +63,8 @@ body {
 }
 
 img {
-    height: 250px;
-    width: 250px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
 }

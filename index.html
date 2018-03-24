@@ -17,7 +17,6 @@
     <script src="js/categories.js"></script>
 </head>
 <body>
-
 <div id="owl-carousel-container"></div>
 <script id="owl-carousel-template" type="text/x-handlebars-template">
     <div class="owl-carousel">
@@ -27,27 +26,27 @@
             <div class="row content">
                 <div class="col-sm-6 nomineeContent">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nomineeName">
-                            <img class="nomineeImg  hidden-xs hidden-sm" src="{{nominees.[1].imgUrl}}"/>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 nomineeName">
+                            <img class="nomineeImg owl-lazy hidden-xs" data-src="{{nominees.[1].imgUrl}}"/>
                             {{nominees.[1].name}}
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nomineeName">
-                            <img class="nomineeImg  hidden-xs hidden-sm" src="{{nominees.[0].imgUrl}}"/>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 nomineeName">
+                            <img class="nomineeImg owl-lazy hidden-xs" data-src="{{nominees.[0].imgUrl}}"/>
                             {{nominees.[0].name}}
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nomineeName">
-                            <img class="nomineeImg  hidden-xs hidden-sm" src="{{nominees.[2].imgUrl}}"/>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 nomineeName">
+                            <img class="nomineeImg owl-lazy hidden-xs" data-src="{{nominees.[2].imgUrl}}"/>
                             {{nominees.[2].name}}
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nomineeName">
-                            <img class="nomineeImg  hidden-xs hidden-sm" src="{{nominees.[3].imgUrl}}"/>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 nomineeName">
+                            <img class="nomineeImg owl-lazy hidden-xs" data-src="{{nominees.[3].imgUrl}}"/>
                             {{nominees.[3].name}}
                         </div>
                     </div>
                 </div>
-                <div class="charts col-sm-12 col-xs-12 col-md-6 col-lg-6 middle-lg">
+                <div class="charts col-sm-6 col-xs-12 col-md-6 col-lg-6 middle-lg">
                     <canvas id="cat{{@index}}"></canvas>
                 </div>
             </div>
