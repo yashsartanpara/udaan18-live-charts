@@ -76,13 +76,14 @@ socket.on('init', (votes) => {
             autoWidth:true
         },
         lazyLoad:true,
+        dots:true,
         nav: true,
         items: 1,
         loop: true,
-        autoplay: true,
-        autoplayTimeout:7000
+        autoplay: false,
+        autoplayTimeout:7000,
+        paginationNumbers:true
     });
-
 });
 
 socket.on('vote', (votes) => {
