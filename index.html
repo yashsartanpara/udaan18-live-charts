@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <link rel="stylesheet" href="css/flexboxgrid-helpers.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/Chart.bundle.js"></script>
     <script src="js/socket.io.js"></script>
@@ -27,12 +28,12 @@
                 <div class="col-sm-6 nomineeContent">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 nomineeName">
-                            <img class="nomineeImg owl-lazy hidden-xs" data-src="{{nominees.[1].imgUrl}}"/>
-                            {{nominees.[1].name}}
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 nomineeName">
                             <img class="nomineeImg owl-lazy hidden-xs" data-src="{{nominees.[0].imgUrl}}"/>
                             {{nominees.[0].name}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 nomineeName">
+                            <img class="nomineeImg owl-lazy hidden-xs" data-src="{{nominees.[1].imgUrl}}"/>
+                            {{nominees.[1].name}}
                         </div>
                     </div>
                     <div class="row">

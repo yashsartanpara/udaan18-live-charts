@@ -75,12 +75,14 @@ socket.on('init', (votes) => {
             autoHeight:true,
             autoWidth:true
         },
+        animateIn: 'zoomIn',
+        animateOut:'zoomOut',
         lazyLoad:true,
         dots:true,
         nav: true,
         items: 1,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout:7000,
         paginationNumbers:true
     });
