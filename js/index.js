@@ -75,8 +75,6 @@ socket.on('init', (votes) => {
             autoHeight:true,
             autoWidth:true
         },
-        animateIn: 'zoomIn',
-        animateOut:'zoomOut',
         lazyLoad:true,
         dots:true,
         nav: true,
