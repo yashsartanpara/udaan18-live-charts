@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="85dc4d57-eb71-48d6-a4ab-d86844d1806e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,8 +60,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+            <state relative-caret-position="367">
+              <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -254,7 +253,7 @@
       <workItem from="1521952981567" duration="1967000" />
       <workItem from="1521973127571" duration="2061000" />
       <workItem from="1521984874845" duration="12000" />
-      <workItem from="1521996791645" duration="3084000" />
+      <workItem from="1521996791645" duration="3838000" />
     </task>
     <task id="LOCAL-00001" summary="Update UI">
       <created>1521702679390</created>
@@ -319,11 +318,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522000872469</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update animation">
+      <created>1522001729256</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1522001729256</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85182000" />
+    <option name="totallyTimeSpent" value="85936000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -389,7 +395,8 @@
     <MESSAGE value="Add Dots navigation" />
     <MESSAGE value="Update navigation dots" />
     <MESSAGE value="Update data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update data" />
+    <MESSAGE value="Update animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update animation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -698,14 +705,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/animate.css" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/categories.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -722,6 +721,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
@@ -732,8 +739,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        <state relative-caret-position="367">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
           <folding />
         </state>
       </provider>
