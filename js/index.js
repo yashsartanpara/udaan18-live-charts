@@ -104,14 +104,9 @@ const updateData = (pieCharts, votes) => {
             data: data.votes
         }
     });
-
     // console.log(charts)
     for (let i = 0; i < pieCharts.length; i++) {
-        console.log(pieCharts[i].data.datasets[0].length);
-        // for (let j = 0; j < charts.length; j++) {
         pieCharts[i].data.datasets[0].data = charts[i].data;
-        console.log(pieCharts[i].data.datasets[0].data + "=" + charts[i].data)
-        // }
         pieCharts[i].update();
     }
 
