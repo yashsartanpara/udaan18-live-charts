@@ -79,7 +79,7 @@ socket.on('init', (votes) => {
         nav: true,
         items: 1,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 7000,
         paginationNumbers: true
     });
