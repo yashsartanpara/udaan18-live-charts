@@ -5,8 +5,8 @@ var data = {
             "nominees": [
                 {
                     "_id": "5ab78a3a73c608691bdca629",
-                    "name": "Chandraprakash Sharma",
-                    "imgUrl": "https://raw.githubusercontent.com/bvmites/udaan18-red-carpet/master/src/assets/tarun-nagar.png"
+                    "name": "Tarun Nagar",
+                    "imgUrl": "https://raw.githubusercontent.com/bvmites/udaan18-red-carpet/master/src/assets/chandraprakash-sharma.png"
                 },
                 {
                     "_id": "5ab78a3a73c608691bdca62a",
@@ -15,8 +15,8 @@ var data = {
                 },
                 {
                     "_id": "5ab78a3a73c608691bdca62b",
-                    "name": "Tarun Nagar",
-                    "imgUrl": "https://raw.githubusercontent.com/bvmites/udaan18-red-carpet/master/src/assets/chandraprakash-sharma.png"
+                    "name": "Chandraprakash Sharma",
+                    "imgUrl": "https://raw.githubusercontent.com/bvmites/udaan18-red-carpet/master/src/assets/tarun-nagar.png"
                 },
                 {
                     "_id": "5ab78a3a73c608691bdca62c",
