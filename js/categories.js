@@ -5,7 +5,7 @@ var data = {
             "nominees": [
                 {
                     "_id": "5ab78a3a73c608691bdca629",
-                    "name": "Tarun Nagar",
+                    "name": "Chandraprakash Sharma",
                     "imgUrl": "https://raw.githubusercontent.com/bvmites/udaan18-red-carpet/master/src/assets/tarun-nagar.png"
                 },
                 {
@@ -15,7 +15,7 @@ var data = {
                 },
                 {
                     "_id": "5ab78a3a73c608691bdca62b",
-                    "name": "Chandraprakash Sharma",
+                    "name": "Tarun Nagar",
                     "imgUrl": "https://raw.githubusercontent.com/bvmites/udaan18-red-carpet/master/src/assets/chandraprakash-sharma.png"
                 },
                 {
