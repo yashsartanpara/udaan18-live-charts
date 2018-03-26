@@ -20,7 +20,6 @@ const setData = (votes) => {
             data: data.votes
         }
     });
-
     pieCharts = charts.map(function (e) {
         return new Chart(e.el, {
             type: 'doughnut',
@@ -35,10 +34,10 @@ const setData = (votes) => {
                         'rgba(0, 255, 127, 1)'
                     ],
                     borderColor: [
-                        'rgba(255,99,132,1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(0, 255, 127, 1)'
+                        'rgba(0,0,0,1)',
+                        'rgba(0,0,0, 1)',
+                        'rgba(0,0,0, 1)',
+                        'rgba(0,0,0, 1)'
                     ]
                 }],
             },
@@ -71,18 +70,18 @@ socket.on('init', (votes) => {
 
     setData(category);
     $(".owl-carousel").owlCarousel({
-        responsive:{
-            autoHeight:true,
-            autoWidth:true
+        responsive: {
+            autoHeight: true,
+            autoWidth: true
         },
-        lazyLoad:true,
-        dots:true,
+        lazyLoad: true,
+        dots: true,
         nav: true,
         items: 1,
         loop: true,
         autoplay: true,
-        autoplayTimeout:7000,
-        paginationNumbers:true
+        autoplayTimeout: 7000,
+        paginationNumbers: true
     });
 });
 
