@@ -119,3 +119,18 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+.red-carpet-link {
+    position: fixed;
+    color: white;
+}
+
+.red-carpet-link{
+    color: #FFFFFF;
+    font-family: "Segoe UI","sans-serif";
+    font-size: 2vh;
+}
+
+#owl-carousel-container{
+    padding-top: 50px !important;
+}

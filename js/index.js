@@ -28,10 +28,10 @@ const setData = (votes) => {
                     label: "# of votes",
                     data: e.data,
                     backgroundColor: [
-                        'rgba(255, 187 , 0, 1)',
-                        'rgba(124, 187, 0, 1)',
                         'rgba(246, 83, 20, 1)',
-                        'rgba(0, 161, 241, 1)'
+                        'rgba(0, 161, 241, 1)',
+                        'rgba(255, 187 , 0, 1)',
+                        'rgba(124, 187, 0, 1)'
                     ],
                     borderColor: [
                         'rgba(0,0,0,1)',
@@ -79,7 +79,7 @@ socket.on('init', (votes) => {
         nav: true,
         items: 1,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 7000,
         paginationNumbers: true
     });
