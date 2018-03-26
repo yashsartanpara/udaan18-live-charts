@@ -128,9 +128,10 @@ img {
 .red-carpet-link{
     color: #FFFFFF;
     font-family: "Segoe UI","sans-serif";
-    font-size: 2vh;
+    font-size: 1.5vh;
+    top: 0;
 }
 
 #owl-carousel-container{
-    padding-top: 50px !important;
+    padding-top: 2vh !important;
 }
