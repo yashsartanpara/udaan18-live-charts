@@ -108,7 +108,6 @@ const updateData = (pieCharts, votes) => {
         pieCharts[i].data.datasets[0].data = charts[i].data.sort(function (a, b) {
             return a > b ? 1 : -1;
         });
-        console.log(pieCharts[i].data.datasets[0].data);
         pieCharts[i].update();
     }
 
