@@ -17,7 +17,9 @@ const setData = (votes) => {
     charts = chartData.chart.map((data, index) => {
         return {
             el: $("#cat" + index),
-            data: data.votes
+            data: data.votes.sort(function (a, b) {
+                return a > b ? 1 : -1;
+            })
         }
     });
     pieCharts = charts.map(function (e) {

@@ -123,10 +123,12 @@
         charts = chartData.chart.map((data, index) => {
             return {
                 el: $("#cat" + index),
-                data: data.votes
+                data: data.votes.sort(function (a, b) {
+                    return a > b ? 1 : -1;
+                })
             }
         });
-
+        console.log(charts);
         pieCharts = charts.map(function (e) {
             return new Chart(e.el, {
                 type: 'doughnut',
