@@ -44,6 +44,7 @@ const setData = (votes) => {
                 }],
             },
             options: {
+                rotation: Math.PI,
                 responsive: true,
                 tooltips: false,
                 responsiveAnimationDuration: 0,

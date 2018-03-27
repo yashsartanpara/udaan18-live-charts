@@ -128,7 +128,6 @@
                 })
             }
         });
-        console.log(charts);
         pieCharts = charts.map(function (e) {
             return new Chart(e.el, {
                 type: 'doughnut',
@@ -151,6 +150,7 @@
                     }],
                 },
                 options: {
+                    rotation: Math.PI,
                     responsive: true,
                     tooltips: false,
                     responsiveAnimationDuration: 0,
